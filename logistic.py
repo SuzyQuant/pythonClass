@@ -27,7 +27,7 @@ def logbifurc(R1,R2) :
     while R1 < R2 :
         theLogisticMap = logistic(R1,x0,50)
         RR = R1 * np.ones((50,1))
-        plt.plot(RR,theLogisticMap)  
+        plt.plot(RR,theLogisticMap,'.')  
         R1 = R1 + step
 
     plt.show()
